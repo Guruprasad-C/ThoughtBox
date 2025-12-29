@@ -37,6 +37,8 @@ class _NotesItemState extends State<NotesItem> {
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
               SizedBox(height: 5),
               Row(

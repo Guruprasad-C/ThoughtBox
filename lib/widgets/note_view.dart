@@ -38,7 +38,11 @@ class _NoteViewState extends State<NoteView> {
     return Consumer<NotesProvider>(
       builder: (context, value, child) => Scaffold(
         appBar: AppBar(
-          title: Text('Note'),
+          title: Text(
+            widget.note.title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
           backgroundColor: Colors.amberAccent,
           actions: [
             IconButton(
